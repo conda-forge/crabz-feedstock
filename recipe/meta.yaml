@@ -1,5 +1,5 @@
-{% set version = "0.6.3" %}
-{% set sha256 = "875fc9d8914e53568b9aded241682c790c42f1346e1306b1697d45c7cadfe1e8" %}
+{% set version = "0.7.2" %}
+{% set sha256 = "c4c5a0ec5f8164774f7d83347c321dd9b37f3b3ed40d30e08b6ffed62bffd8ee" %}
 
 package:
   name: crabz
