@@ -1,5 +1,5 @@
-{% set version = "0.9.0" %}
-{% set sha256 = "8b5df26a8ff0b1252d5a31c7135b39aa328e9a256c8869c2e9f346d561e522e7" %}
+{% set version = "0.10.0" %}
+{% set sha256 = "2bbd8eb669a6570b104a0eb412d2492d5a9296524964cd676440069d27f52e6c" %}
 
 package:
   name: crabz
@@ -15,8 +15,7 @@ build:
 requirements:
   build:
     - {{ compiler('rust') }}
-    - {{ compiler('c') }}  # [not win]
-    - {{ compiler('m2w64_c') }}  # [win]
+    - {{ compiler('c') }}
     - pkg-config
     - make
     - cmake
@@ -29,7 +28,6 @@ test:
 about:
   home: https://github.com/sstadick/crabz
   license: MIT
-  license_family: MIT
   license_file:
     - LICENSE-MIT
     - THIRDPARTY.yml
